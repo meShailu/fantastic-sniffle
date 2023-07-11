@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+img {
+  border-radius: 30px;
+}
+h2 {
+  text-transform: uppercase;
+}
+button {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+button svg {
+  color: blue;
+}
+body {
+  margin: 20px;
+}
+article {
+  background-color: ghostwhite;
+  padding: 20px;
+  border-radius: 20px;
+}
