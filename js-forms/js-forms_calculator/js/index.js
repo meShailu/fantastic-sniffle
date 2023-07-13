@@ -24,8 +24,6 @@ form.addEventListener("submit", (event) => {
 
   let result;
 
-  // --v-- write your code here --v--
-
   // --^-- write your code here --^--
 
   resultOutput.textContent = result;
