@@ -33,14 +33,25 @@ const EXAMPLE_DATA = {
   url: "https://swapi.dev/api/people/1/",
 };
 
-// Create dom element for a card and append it to the root
+// // Create dom element for a card and append it to the root
 const firstCard = Card(EXAMPLE_DATA);
 renderElement(firstCard);
 
-fetchDataAndRender();
-
 // --v-- your code below this line --v--
 
+const apiURL = "https://swapi.dev/api/people";
+
+try {
+  const response = await fetch(apiURL);
+  const data = await response.json();
+  data.results.forEach((element) => {
+    const card = Card(element);
+    renderElement(card);
+  });
+} catch (error) {
+  console.error(error);
+}
+
 function fetchDataAndRender() {
-  fetch(); // ?
+  fetch(); // ??
 }
