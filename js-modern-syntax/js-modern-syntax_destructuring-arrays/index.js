@@ -5,6 +5,8 @@ console.clear();
 // Make sure to export your variable as in the example below to make the tests work.
 
 const item = ["Egg", 0.25, 12];
+const [name, price, quantity] = item;
+console.log(item);
 
 // example: export const [value1, value2] = array;
 
@@ -12,12 +14,14 @@ const item = ["Egg", 0.25, 12];
 // Use array destructuring to extract the variables "firstNameOfChris", "lastNameOfChris" and "ageOfChris".
 
 const personChris = [12, "Chris", "Owen"];
+const [firstNameOfChris, lastNameOfChris, ageOfChris] = personChris;
 
 // EXERCISE 3
 // Use array destructuring to extract the variables "firstNameOfAlex" and "lastNameOfAlex".
 // Make sure not to have unused variables.
 
 const personAlex = ["Alex", 12, "Main"];
+const [firstNameOfAlex, lastNameOfAlex] = personAlex;
 
 // EXERCISE 4
 // Use array destructuring to extract the last name from the array
