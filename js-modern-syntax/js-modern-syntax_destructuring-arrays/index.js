@@ -13,7 +13,7 @@ export const [name, price, quantity] = item;
 // Use array destructuring to extract the variables "firstNameOfChris", "lastNameOfChris" and "ageOfChris".
 
 const personChris = [12, "Chris", "Owen"];
-export const [firstNameOfChris, lastNameOfChris, ageOfChris] = personChris;
+export const [ageOfChris, lastNameOfChris, firstNameOfChris] = personChris;
 
 // EXERCISE 3
 // Use array destructuring to extract the variables "firstNameOfAlex" and "lastNameOfAlex".
