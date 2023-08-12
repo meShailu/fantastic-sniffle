@@ -27,7 +27,8 @@ Refactor the code so that
 You can use the following hints as guideline:
 
 - Lift both states up to the `App` component.
-- Write a `handleCreateUser` function which receives the two parameters `name` and `email` and uses them to set both state variables.
+- Write a `handleCreateUser` function which receives the two parameters `name` and `email` and uses them to set both state variable
+  s.
 - Pass `handleCreateUser` to the `Form` component:
   - Hint: `onDelete={handleDelete}`
   - Make sure to receive the prop inside of the `Form` component.

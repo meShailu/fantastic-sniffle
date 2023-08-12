@@ -3,10 +3,10 @@ import { useState } from "react";
 export default function Counter() {
   const [count, setCount] = useState(0);
 
+  const incrementBy3 = 3;
+
   function handleIncrement() {
-    setCount(count + 1);
-    setCount(count + 1);
-    setCount(count + 1);
+    setCount(count + incrementBy3);
   }
 
   return (
