@@ -3,8 +3,11 @@ import { useRouter } from "next/router";
 import { StyledButton } from "../Button/Button.styled";
 import { ProductCard } from "./Product.styled";
 import Comments from "../Comments";
+import { useState } from "react";
 
-export default function Product() {
+export default function Product({ onDelete }) {
+  const [isEditMode, setIsEditMode] = useState(false);
+
   const router = useRouter();
   const { id } = router.query;
 
@@ -27,6 +30,23 @@ export default function Product() {
       <StyledButton type="button" onClick={() => router.push("/")}>
         Back to all
       </StyledButton>
+      <button
+        type="button"
+        onClick={() => {
+          setIsEditMode(!isEditMode);
+        }}
+      >
+        Update
+      </button>
+
+      <button
+        type="button"
+        onClick={() => {
+          onDelete(id);
+        }}
+      >
+        Delete
+      </button>
     </ProductCard>
   );
 }
